@@ -1,0 +1,114 @@
+/* ===============================
+   ROOT BACKGROUND
+   =============================== */
+AnchorPane {
+    -fx-background-image: url("background.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ===============================
+   SCORE & ROUNDS
+   =============================== */
+#score,
+#rounds {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-padding: 3 8;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 6, 0.2, 2, 2);
+}
+
+/* Labels like "Score:" "Rounds:" */
+.label {
+    -fx-text-fill: #ffeb3b;
+}
+
+/* ===============================
+   TIMER
+   =============================== */
+#timerArea {
+    -fx-fill: linear-gradient(to bottom, #00f2fe, #4facfe);
+    -fx-stroke: #222;
+    -fx-stroke-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 10, 0.2, 2, 2);
+}
+
+#times {
+    -fx-text-fill: #fff;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, #000, 6, 0.3, 2, 2);
+}
+
+/* ===============================
+   WORD DISPLAY
+   =============================== */
+#wordDisplay {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+    -fx-background-radius: 12;
+    -fx-padding: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 8, 0.3, 2, 2);
+    -fx-letter-spacing: 8px;
+}
+
+/* ===============================
+   LETTER BUTTONS (Grid)
+   =============================== */
+#letterGrid Button {
+    -fx-background-color: linear-gradient(to bottom, #232526, #414345);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-padding: 10 14;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 4, 0.2, 1, 1);
+    -fx-transition: 0.3s;
+}
+
+#letterGrid Button:hover {
+    -fx-background-color: linear-gradient(to right, #ff758c, #ff7eb3);
+    -fx-text-fill: #141E30;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+#letterGrid Button:disabled {
+    -fx-background-color: #444;
+    -fx-text-fill: #aaa;
+    -fx-opacity: 0.6;
+}
+
+/* ===============================
+   START OVER BUTTON
+   =============================== */
+#startOver {
+    -fx-background-color: linear-gradient(to right, #43cea2, #185a9d);
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-cursor: hand;
+    -fx-padding: 12 24;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 6, 0.2, 2, 2);
+}
+
+#startOver:hover {
+    -fx-background-color: linear-gradient(to right, #185a9d, #43cea2);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+#startOver:pressed {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
